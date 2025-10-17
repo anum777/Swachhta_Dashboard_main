@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Upload</title>
+</head>
+<body>
+    <h2>Capture and Upload Image</h2>
+
+    <!-- Video Element for Camera -->
+    <video id="video" width="640" height="480" autoplay></video>
+    <br>
+    <button id="capture">Capture Image</button>
+    <br>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    
+    <form id="upload-form" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="image" id="image-data">
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <script>
+        const video = document.getElementById("video");
+        const canvas = document.getElementById("canvas");
+        const captureButton = document.getElementById("capture");
+        const uploadButton = document.querySelector("#upload-form button[type='submit']");
+        const imageDataInput = document.getElementById("image-data");
+    
+        // Access user's camera
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then((stream) => {
+                video.srcObject = stream;
+            })
+            .catch((err) => {
+                console.error("Error accessing the camera: ", err);
+            });
+    
+        // Capture Image
+        captureButton.addEventListener("click", () => {
+            const context = canvas.getContext("2d");
+            context.drawImage(video, 0, 0, 640, 480);
+            const imageDataURL = canvas.toDataURL("image/png"); // Convert image to Base64
+    
+            // Store base64 image in hidden input
+            imageDataInput.value = imageDataURL;
+            alert("Image Captured! Now click 'Upload Image'.");
+        });
+    
+        // Handle Upload
+        uploadButton.addEventListener("click", async (event) => {
+            event.preventDefault(); // Stop default form action
+    
+            if (!imageDataInput.value) {
+                alert("Please capture an image first!");
+                return;
+            }
+    
+            const formData = new FormData();
+            formData.append("image", imageDataInput.value);
+    
+            try {
+                const response = await fetch("/upload", {
+                    method: "POST",
+                    body: formData
+                });
+    
+                const result = await response.text();
+                alert("Image Uploaded Successfully!");
+                document.body.innerHTML += result;  // Show processed image link
+            } catch (error) {
+                console.error("Error uploading image:", error);
+                alert("Error uploading image. Check the console.");
+            }
+        });
+    </script>
+    
+</body>
+</html>

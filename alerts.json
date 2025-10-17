@@ -1,0 +1,169 @@
+[
+    {
+        "timestamp": "2025-04-26 23:16:55",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250426231651.jpg"
+    },
+    {
+        "timestamp": "2025-04-26 23:21:08",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250426232104.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:14:23",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427211423.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:14:34",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427211434.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:24:34",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212434.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:25:06",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212506.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:26:41",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212641.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:26:56",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212656.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:27:24",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212724.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:28:47",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212847.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:29:56",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427212956.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:55:48",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427215547.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:57:28",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427215728.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 21:57:50",
+        "classes": [
+            "bottle",
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427215749.jpg"
+    },
+    {
+        "timestamp": "2025-04-27 22:32:51",
+        "classes": [
+            "bottle",
+            "bottle"
+        ],
+        "image_path": "processed_original_20250427223251.jpg"
+    },
+    {
+        "timestamp": "2025-05-02 00:58:15",
+        "classes": [
+            "bottle",
+            "bottle"
+        ],
+        "image_path": "processed_original_20250502005815.jpg"
+    },
+    {
+        "timestamp": "2025-05-02 00:58:39",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250502005839.jpg"
+    },
+    {
+        "timestamp": "2025-05-03 04:44:09",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250503044407.jpg"
+    },
+    {
+        "timestamp": "2025-05-03 04:59:25",
+        "classes": [
+            "bottle",
+            "bottle"
+        ],
+        "image_path": "processed_original_20250503045923.jpg"
+    },
+    {
+        "timestamp": "2025-05-03 09:55:16",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250503095515.jpg",
+        "confidences": {
+            "bottle": 0.4045017659664154
+        }
+    },
+    {
+        "timestamp": "2025-05-03 12:40:45",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250503124045.jpg",
+        "confidences": {
+            "bottle": 0.8278905153274536
+        }
+    },
+    {
+        "timestamp": "2025-05-03 12:41:30",
+        "classes": [
+            "bottle"
+        ],
+        "image_path": "processed_original_20250503124130.jpg",
+        "confidences": {
+            "bottle": 0.5929345488548279
+        }
+    }
+]

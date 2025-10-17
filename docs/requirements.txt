@@ -1,0 +1,3 @@
+pandoc
+pandoc-latex-template
+texlive
