@@ -1,5 +1,0 @@
-path: C:/Users/anuma/OneDrive/Desktop/swacchta_dashboard_project_2/datasets # Root folder
-train: train/images  # Path to train images
-val: valid/images  # Path to validation images
-nc: 6  # Number of classes
-names: ["cardboard", "glass", "metal", "paper", "plastic", "trash"]  # Class names
